@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="favicon.ico">
+
+    <meta name="theme-color" content="#0b0c10">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyVortex| Secure The Future</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="cursor"></div>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="loader-box">
+            <p class="load-text">Booting CyVortex Security Systems...</p>
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+
+    <!-- BACKGROUND -->
+    <canvas id="matrix"></canvas>
+    <canvas id="particles"></canvas>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+           <img src="assets/logo.jpg" alt="cyvortexlogo">
+        </div>
+        <title>CyVortex| Secure The Future</title>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="faq.html">FAQ</a>
+            <a href="blog.html">Blog</a>
+
+            <!-- CONTACT BUTTON (Redirect to Google Form) -->
+            <a href="https://forms.gle/aFDjxiU8aNGTjfrr6" 
+               class="btn-nav" 
+               target="_blank">
+               Contact
+            </a>
+
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <p id="typing-text" class="typing"></p>
+
+        <h1 class="glitch" data-text="CYVORTEX">CYVORTEX</h1>
+        <p>CyVortex| Secure The Future</p>
+
+     
+    </section>
+    
+    <!-- SERVICE CARDS -->
+<section class="features" style="flex-wrap: wrap; gap: 25px; margin-bottom: 40px;">
+
+    <a href="service-web-pentesting.html" class="card card-link">
+        <h3>Website & Web App Pentesting</h3>
+        <p>Manual + automated VAPT, OWASP Top 10 testing, authentication bypass & secure patching report.</p>
+    </a>
+
+    <a href="service-network-security.html" class="card card-link">
+        <h3>Network & WiFi Security</h3>
+        <p>WiFi cracking checks, firewall testing, MITM simulation, router audit & secure hardening.</p>
+    </a>
+
+    <a href="service-mobile-app-testing.html" class="card card-link">
+        <h3>Mobile App Security Testing</h3>
+        <p>APK analysis, API flaws, insecure storage, session hijacking & developer security guidelines.</p>
+    </a>
+
+    <a href="service-cloud-security.html" class="card card-link">
+        <h3>Cloud Security Audit</h3>
+        <p>Misconfigurations, IAM issues, bucket exposure, encryption gaps & cloud hardening steps.</p>
+    </a>
+
+    <a href="service-osint-analysis.html" class="card card-link">
+        <h3>OSINT & Digital Footprint Scan</h3>
+        <p>Breached data, dark-web findings, impersonation detection & privacy hardening checklist.</p>
+    </a>
+
+    <a href="secure-webdev.html" class="card card-link">
+        <h3>Secure Website Development</h3>
+        <p>Fully coded secure websites, SEO-ready, optimized & protected with security best practices.</p>
+    </a>
+
+</section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials">
+    <h2 class="section-title">Client Testimonials</h2>
+
+    <div class="testimonial-box">
+        <p class="testimonial-text">
+            "Their pentesting report was detailed and accurate. They found vulnerabilities our internal team missed."
+        </p>
+        <p class="testimonial-author">— Priya Sharma, Tech Lead</p>
+    </div>
+
+    <div class="testimonial-box">
+        <p class="testimonial-text">
+            "Highly recommended for OSINT & digital footprint analysis. Their findings helped us remove online risks."
+        </p>
+        <p class="testimonial-author">— Anil Verma, Small Business Owner</p>
+    </div>
+
+    <div class="testimonial-box">
+        <p class="testimonial-text">
+            "Professional, fast, student-friendly pricing. CyVortex is the only cyber team I trust for audits & VAPT."
+        </p>
+        <p class="testimonial-author">— Aditya R., Founder</p>
+    </div>
+</section>
+
+
+    <!-- FAQ SECTION (HOME PREVIEW) -->
+    <section class="faqs">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+
+    <div class="faq-box">
+        <button class="faq-question">What services does CyVortex provide?</button>
+        <div class="faq-answer">
+            <p>We offer Website Pentesting, Mobile App Security Testing, Network Security Assessment, 
+            Cloud Security Audits, and OSINT / Digital Footprint Investigations.</p>
+        </div>
+    </div>
+
+    <div class="faq-box">
+        <button class="faq-question">Is CyVortex affordable for students?</button>
+        <div class="faq-answer">
+            <p>Yes! CyVortex was created especially to offer professional cybersecurity services 
+            at student-friendly pricing.</p>
+        </div>
+    </div>
+
+    <div class="faq-box">
+        <button class="faq-question">How long does a pentest or audit take?</button>
+        <div class="faq-answer">
+            <p>Most tests take 1–5 days depending on complexity. Larger security assessments may take up to a week.</p>
+        </div>
+    </div>
+
+    <div class="faq-box">
+        <button class="faq-question">Will I receive a detailed security report?</button>
+        <div class="faq-answer">
+            <p>Yes! Every project includes a PDF report with vulnerabilities, screenshots, impact,
+            and recommended fixes.</p>
+        </div>
+    </div>
+
+    <div class="faq-box">
+        <button class="faq-question">How do I contact CyVortex for services?</button>
+        <div class="faq-answer">
+            <p>You can reach us anytime via the Contact page or directly: contactcyvortex@gmail.com.</p>
+        </div>
+    </div>
+
+</section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 CyVortex • Secure the Future</p>
+        <div style="margin-top:10px;">
+            <a href="privacy.html" style="color:#66fcf1; margin-right:15px;">Privacy Policy</a>
+            <a href="terms.html" style="color:#66fcf1;">Terms of Service</a>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn">↑</button>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
