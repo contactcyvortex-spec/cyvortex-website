@@ -161,17 +161,12 @@ footer {
 /* Scroll Button */
 #scrollTopBtn {
     position: fixed;
-    bottom: 30px;
-    right: 90px;
-    background: #66fcf1;
-    padding: 12px;
-    font-size: 22px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    display: none;
-    z-index: 100;
+    bottom: 20px;        /* Distance from bottom */
+    left: 50%;           /* Move to horizontal center */
+    transform: translateX(-50%);  /* Perfect centering */
+    z-index: 9999;       /* Keep button on top of elements */
 }
+
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
