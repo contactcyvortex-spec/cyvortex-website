@@ -160,21 +160,17 @@ footer {
 
 /* Scroll Button */
 #scrollTopBtn {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 90px;
     background: #66fcf1;
-    color: #0b0c10;
+    padding: 12px;
     font-size: 22px;
-    text-align: center;
-    line-height: 45px;
-    cursor: pointer;
+    border-radius: 10px;
     border: none;
-    outline: none;
-    transition: 0.3s;
-}
-#scrollTopBtn:hover {
-    background: #45e0d0;
+    cursor: pointer;
+    display: none;
+    z-index: 100;
 }
 
 /* RESPONSIVE */
