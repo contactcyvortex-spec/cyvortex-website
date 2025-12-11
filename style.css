@@ -347,3 +347,23 @@ footer {
 .blog-read:hover {
     text-shadow: 0 0 10px #66fcf1;
 }
+/* ===== CHATBOT FIX (CyVortex) ===== */
+
+/* Reduce chatbot height and move it up */
+.cb-window {
+    max-height: 70vh !important;     /* Prevents it from becoming too tall */
+    bottom: 40px !important;         /* Lifts the chatbot up */
+    border-radius: 20px !important;  /* Smooth rounded corners */
+}
+
+/* Adjust chatbot icon position */
+.cb-bubble-container {
+    bottom: 35px !important;         /* Move chatbot icon up */
+    right: 25px !important;          /* Adjust if needed */
+}
+
+/* Prevent chatbot from overlapping scroll button */
+#scrollTopBtn {
+    right: 90px !important;  /* Already correct in your CSS */
+}
+
