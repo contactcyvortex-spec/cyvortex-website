@@ -161,10 +161,10 @@ footer {
 /* Scroll Button */
 #scrollTopBtn {
     position: fixed;
-    bottom: 20px;        /* Distance from bottom */
-    left: 50%;           /* Move to horizontal center */
-    transform: translateX(-50%);  /* Perfect centering */
-    z-index: 9999;       /* Keep button on top of elements */
+    bottom: 20px;        
+    left: 50%;        
+    transform: translateX(-50%);  
+    z-index: 9999;       
 }
 
 
