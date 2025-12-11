@@ -366,4 +366,93 @@ footer {
 #scrollTopBtn {
     right: 90px !important;  /* Already correct in your CSS */
 }
+/* ============================================
+   CYVORTEX CHATBOT – PREMIUM CYBER STYLE
+   ============================================ */
+
+/* Reduce chatbot height & adjust position */
+.cb-window {
+    max-height: 70vh !important;
+    bottom: 40px !important;
+    right: 25px !important;
+    border-radius: 18px !important;
+    background: rgba(11,12,16,0.95) !important;
+    backdrop-filter: blur(10px) !important;
+    box-shadow: 0 0 22px rgba(102,252,241,0.35) !important;
+    color: #c5c6c7 !important;
+}
+
+/* Chat header styling */
+.cb-window-header {
+    background: linear-gradient(90deg, #0BE4F4, #00FFC6) !important;
+    color: #0b0c10 !important;
+    font-weight: 700 !important;
+    border-radius: 14px 14px 0 0 !important;
+    box-shadow: 0 0 18px rgba(102,252,241,0.8) !important;
+}
+
+/* Chat message area scrollbar styling */
+.cb-window ::-webkit-scrollbar {
+    width: 8px !important;
+}
+.cb-window ::-webkit-scrollbar-thumb {
+    background: #45a29e !important;
+    border-radius: 10px !important;
+}
+
+/* Chat user's message bubble */
+.cb-user-msg {
+    background: #66fcf1 !important;
+    color: #0b0c10 !important;
+    border-radius: 12px !important;
+    padding: 10px 14px !important;
+    box-shadow: 0 0 12px rgba(102,252,241,0.6) !important;
+}
+
+/* AI message bubble */
+.cb-bot-msg {
+    background: rgba(31,40,51,0.85) !important;
+    color: #c5c6c7 !important;
+    border: 1px solid #45a29e !important;
+    border-radius: 12px !important;
+    padding: 10px 14px !important;
+    box-shadow: 0 0 14px rgba(102,252,241,0.35) !important;
+}
+
+/* Chat input box */
+.cb-input, 
+.cb-textarea {
+    background: rgba(11,12,16,0.85) !important;
+    color: #ffffff !important;
+    border: 1px solid #45a29e !important;
+    border-radius: 12px !important;
+}
+
+/* Chat send button */
+.cb-send-btn {
+    background: #66fcf1 !important;
+    color: #0b0c10 !important;
+    border-radius: 50% !important;
+    box-shadow: 0 0 12px rgba(102,252,241,0.7) !important;
+}
+
+/* Chat bubble icon (floating button) */
+.cb-bubble-container {
+    bottom: 32px !important;
+    right: 30px !important;
+}
+
+.cb-bubble {
+    background: #0BE4F4 !important;
+    border-radius: 50% !important;
+    box-shadow: 0 0 20px rgba(0,255,200,0.6) !important;
+}
+
+/* Footer text inside chat */
+.cb-footer {
+    color: #66fcf1 !important;
+    font-size: 13px !important;
+    text-shadow: 0 0 10px #66fcf1 !important;
+}
+
 
