@@ -205,3 +205,44 @@ document.querySelectorAll('.faq-question').forEach(q => {
             answer.style.maxHeight = answer.scrollHeight + "px";
     });
 });
+
+// ================================
+// MOBILE MENU TOGGLE
+// ================================
+const hamburger = document.querySelector('.hamburger');
+const mobileSidebar = document.querySelector('.mobile-sidebar');
+const sidebarOverlay = document.querySelector('.sidebar-overlay');
+const closeBtn = document.querySelector('.close-btn');
+
+// Open sidebar
+if (hamburger) {
+    hamburger.addEventListener('click', () => {
+        mobileSidebar.classList.add('active');
+        sidebarOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling when sidebar is open
+    });
+}
+
+// Close sidebar
+function closeSidebar() {
+    if (mobileSidebar) mobileSidebar.classList.remove('active');
+    if (sidebarOverlay) sidebarOverlay.classList.remove('active');
+    document.body.style.overflow = ''; // Re-enable scrolling
+}
+
+if (closeBtn) {
+    closeBtn.addEventListener('click', closeSidebar);
+}
+
+// Close sidebar when clicking overlay
+if (sidebarOverlay) {
+    sidebarOverlay.addEventListener('click', closeSidebar);
+}
+
+// Close sidebar when clicking a link (for smooth navigation)
+document.querySelectorAll('.sidebar-nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        closeSidebar();
+    });
+});
+

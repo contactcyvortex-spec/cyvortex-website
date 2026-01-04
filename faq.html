@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,112 +10,138 @@
 
 <body>
 
-<!-- LOADER -->
-<div id="loader">
-    <div class="loader-box">
-        <p class="load-text">Decrypting FAQ...</p>
-        <div class="loading-bar"></div>
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="loader-box">
+            <p class="load-text">Decrypting FAQ...</p>
+            <div class="loading-bar"></div>
+        </div>
     </div>
-</div>
 
-<canvas id="matrix"></canvas>
-<div id="particles"></div>
+    <canvas id="matrix"></canvas>
+    <div id="particles"></div>
 
-<!-- HEADER -->
-<header>
-   <div class="logo">
-           <img src="assets/logo.jpg" alt="cyvortexlogo">
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <img src="assets/logo.jpg" alt="cyvortexlogo">
 
         </div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="faq.html">FAQ</a>
-        
-<!-- CONTACT BUTTON (Redirect to Google Form) -->
-            <a href="https://forms.gle/aFDjxiU8aNGTjfrr6" 
-               class="btn-nav" 
-               target="_blank">
-               Contact
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="faq.html" class="active">FAQ</a>
+            <a href="blog.html">Blog</a>
+
+            <!-- CONTACT BUTTON -->
+            <a href="https://forms.gle/aFDjxiU8aNGTjfrr6" class="btn-nav" target="_blank" rel="noopener">
+                Contact
             </a>
+        </nav>
 
-    </nav>
-</header>
-
-<!-- HERO -->
-<section class="hero">
-    <h1 class="glitch" data-text="FAQ">FAQ</h1>
-    <p>Frequently asked questions about our cybersecurity services.</p>
-</section>
-
-<!-- FAQ SECTION -->
-<section style="padding:60px 20px; max-width:900px; margin:auto;">
-
-    <!-- ITEM -->
-   <section class="faqs">
-    <h2 class="section-title">Frequently Asked Questions</h2>
-
-    <div class="faq-box">
-        <button class="faq-question">What services does CyVortex provide?</button>
-        <div class="faq-answer">
-            <p>We offer Website Pentesting, Mobile App Security Testing, Network Security Assessment, 
-            Cloud Security Audits, and OSINT / Digital Footprint Investigations.</p>
+        <!-- HAMBURGER MENU (Mobile) -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+    </header>
+
+    <!-- MOBILE SIDEBAR -->
+    <div class="sidebar-overlay"></div>
+    <div class="mobile-sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <img src="assets/logo.jpg" alt="CyVortex logo">
+            </div>
+            <button class="close-btn">&times;</button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="faq.html" class="active">FAQ</a>
+            <a href="blog.html">Blog</a>
+            <a href="https://forms.gle/aFDjxiU8aNGTjfrr6" class="btn-nav" target="_blank" rel="noopener">Contact</a>
+        </nav>
     </div>
 
-    <div class="faq-box">
-        <button class="faq-question">Is CyVortex affordable for students?</button>
-        <div class="faq-answer">
-            <p>Yes! CyVortex was created especially to offer professional cybersecurity services 
-            at student-friendly pricing.</p>
-        </div>
-    </div>
+    <!-- HERO -->
+    <section class="hero">
+        <h1 class="glitch" data-text="FAQ">FAQ</h1>
+        <p>Frequently asked questions about our cybersecurity services.</p>
+    </section>
 
-    <div class="faq-box">
-        <button class="faq-question">How long does a pentest or audit take?</button>
-        <div class="faq-answer">
-            <p>Most tests take 1–5 days depending on complexity. Larger security assessments may take up to a week.</p>
-        </div>
-    </div>
+    <!-- FAQ SECTION -->
+    <section style="padding:60px 20px; max-width:900px; margin:auto;">
 
-    <div class="faq-box">
-        <button class="faq-question">Will I receive a detailed security report?</button>
-        <div class="faq-answer">
-            <p>Yes! Every project includes a PDF report with vulnerabilities, screenshots, impact,
-            and recommended fixes.</p>
-        </div>
-    </div>
+        <!-- ITEM -->
+        <section class="faqs">
+            <h2 class="section-title">Frequently Asked Questions</h2>
 
-    <div class="faq-box">
-        <button class="faq-question">How do I contact CyVortex for services?</button>
-        <div class="faq-answer">
-            <p>You can reach us anytime via the Contact page or email at contactcyvortex@gmail.com.</p>
-        </div>
-    </div>
+            <div class="faq-box">
+                <button class="faq-question">What services does CyVortex provide?</button>
+                <div class="faq-answer">
+                    <p>We offer Website Pentesting, Mobile App Security Testing, Network Security Assessment,
+                        Cloud Security Audits, and OSINT / Digital Footprint Investigations.</p>
+                </div>
+            </div>
 
-</section>
-<script>
-    document.querySelectorAll(".faq-question").forEach(button => {
-        button.addEventListener("click", () => {
-            const answer = button.nextElementSibling;
+            <div class="faq-box">
+                <button class="faq-question">Is CyVortex affordable for students?</button>
+                <div class="faq-answer">
+                    <p>Yes! CyVortex was created especially to offer professional cybersecurity services
+                        at student-friendly pricing.</p>
+                </div>
+            </div>
 
-            if (answer.style.maxHeight) {
-                answer.style.maxHeight = null;
-            } else {
-                document.querySelectorAll(".faq-answer").forEach(a => a.style.maxHeight = null);
-                answer.style.maxHeight = answer.scrollHeight + "px";
-            }
-        });
-    });
-</script>
+            <div class="faq-box">
+                <button class="faq-question">How long does a pentest or audit take?</button>
+                <div class="faq-answer">
+                    <p>Most tests take 1–5 days depending on complexity. Larger security assessments may take up to a
+                        week.</p>
+                </div>
+            </div>
+
+            <div class="faq-box">
+                <button class="faq-question">Will I receive a detailed security report?</button>
+                <div class="faq-answer">
+                    <p>Yes! Every project includes a PDF report with vulnerabilities, screenshots, impact,
+                        and recommended fixes.</p>
+                </div>
+            </div>
+
+            <div class="faq-box">
+                <button class="faq-question">How do I contact CyVortex for services?</button>
+                <div class="faq-answer">
+                    <p>You can reach us anytime via the Contact page or email at contactcyvortex@gmail.com.</p>
+                </div>
+            </div>
+
+        </section>
+        <script>
+            document.querySelectorAll(".faq-question").forEach(button => {
+                button.addEventListener("click", () => {
+                    const answer = button.nextElementSibling;
+
+                    if (answer.style.maxHeight) {
+                        answer.style.maxHeight = null;
+                    } else {
+                        document.querySelectorAll(".faq-answer").forEach(a => a.style.maxHeight = null);
+                        answer.style.maxHeight = answer.scrollHeight + "px";
+                    }
+                });
+            });
+        </script>
 
 
-<!-- FOOTER -->
-<footer>
-    <p>© 2025 CyVortex • Secure the Future</p>
-</footer>
+        <!-- FOOTER -->
+        <footer>
+            <p>© 2025 CyVortex • Secure the Future</p>
+        </footer>
 
-<script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,27 +11,35 @@
         .service-box {
             max-width: 900px;
             margin: 130px auto;
-            background: rgba(31,40,51,0.92);
+            background: rgba(31, 40, 51, 0.92);
             padding: 40px;
             border-radius: 14px;
             border: 1px solid #45a29e;
-            box-shadow: 0 0 20px rgba(102,252,241,0.25);
+            box-shadow: 0 0 20px rgba(102, 252, 241, 0.25);
         }
+
         .service-box h2 {
             color: #66fcf1;
             font-size: 34px;
             margin-bottom: 15px;
         }
-        .service-box p, li {
+
+        .service-box p,
+        li {
             color: #c5c6c7;
             font-size: 16px;
             line-height: 1.7;
         }
+
         h3 {
             color: #45a29e;
             margin-top: 25px;
         }
-        ul { margin-left: 20px; }
+
+        ul {
+            margin-left: 20px;
+        }
+
         .btn-contact {
             background: #45a29e;
             padding: 12px 25px;
@@ -40,6 +49,7 @@
             margin-top: 25px;
             font-weight: 600;
         }
+
         .btn-contact:hover {
             background: #66fcf1;
         }
@@ -48,51 +58,75 @@
 
 <body>
 
-<canvas id="matrix"></canvas>
-<canvas id="particles"></canvas>
-<div id="cursor"></div>
+    <canvas id="matrix"></canvas>
+    <canvas id="particles"></canvas>
+    <div id="cursor"></div>
 
-<header>
-   <div class="logo">
-           <img src="assets/logo.jpg" alt="cyvortexlogo">
-
+    <header>
+        <div class="logo">
+            <img src="assets/logo.jpg" alt="cyvortexlogo">
         </div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html" class="active">Services</a>
-        <!-- CONTACT BUTTON (Redirect to Google Form) -->
-<a href="https://forms.gle/aFDjxiU8aNGTjfrr6" 
-   class="btn-nav" 
-   target="_blank">
-   Contact
-</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="faq.html">FAQ</a>
+            <a href="blog.html">Blog</a>
+            <a href="https://forms.gle/aFDjxiU8aNGTjfrr6" class="btn-nav" target="_blank" rel="noopener">Contact</a>
+        </nav>
 
-    </nav>
-</header>
+        <!-- HAMBURGER MENU (Mobile) -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
 
-<section class="service-box">
+    <!-- MOBILE SIDEBAR -->
+    <div class="sidebar-overlay"></div>
+    <div class="mobile-sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <img src="assets/logo.jpg" alt="CyVortex logo">
+            </div>
+            <button class="close-btn">&times;</button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="faq.html">FAQ</a>
+            <a href="blog.html">Blog</a>
+            <a href="https://forms.gle/aFDjxiU8aNGTjfrr6" class="btn-nav" target="_blank" rel="noopener">Contact</a>
+        </nav>
+    </div>
 
-    <h2>Network & WiFi Security Testing</h2>
-    <p>A full security assessment of your internal network, routers, switches, firewalls, and Wi-Fi access points.
-We analyze the strength of your wireless encryption, detect weak passwords, identify open ports, misconfigurations, unauthorized devices, and potential entry points used by attackers.
-Our testing includes network mapping, MITM (Man-in-the-Middle) simulation, rogue access point detection, and Wi-Fi cracking checks.
-You receive a detailed report with all vulnerabilities, risks explained in simple language, and recommended fixes to harden your network and make your Wi-Fi infrastructure fully secure and intrusion-resistant..</p>
+    <section class="service-box">
+
+        <h2>Network & WiFi Security Testing</h2>
+        <p>A full security assessment of your internal network, routers, switches, firewalls, and Wi-Fi access points.
+            We analyze the strength of your wireless encryption, detect weak passwords, identify open ports,
+            misconfigurations, unauthorized devices, and potential entry points used by attackers.
+            Our testing includes network mapping, MITM (Man-in-the-Middle) simulation, rogue access point detection, and
+            Wi-Fi cracking checks.
+            You receive a detailed report with all vulnerabilities, risks explained in simple language, and recommended
+            fixes to harden your network and make your Wi-Fi infrastructure fully secure and intrusion-resistant..</p>
 
 
-<a href="https://forms.gle/aFDjxiU8aNGTjfrr6" 
-   target="_blank" 
-   style="display:inline-block; background:#45a29e; color:#0b0c10; padding:12px 28px; border-radius:10px; 
+        <a href="https://forms.gle/aFDjxiU8aNGTjfrr6" target="_blank" style="display:inline-block; background:#45a29e; color:#0b0c10; padding:12px 28px; border-radius:10px; 
           font-weight:600; border:2px solid #66fcf1; text-decoration:none; box-shadow:0 0 12px #66fcf1;">
-Secure My Network
-</a>
+            Secure My Network
+        </a>
 
-</section>
+    </section>
 
-<footer>
-    <p>© 2025 CyVortex • Secure the Future</p>
-</footer>
+    <footer>
+        <p>© 2025 CyVortex • Secure the Future</p>
+    </footer>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>

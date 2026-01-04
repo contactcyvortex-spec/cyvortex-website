@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,14 +9,17 @@
     <title>CyVortex | Affordable Cybersecurity Services in India</title>
 
     <!-- SEO DESCRIPTION -->
-    <meta name="description" content="CyVortex provides affordable and reliable cybersecurity services for students, startups, and small businesses. Web pentesting, network security, mobile app testing, cloud audits, and OSINT analysis." />
+    <meta name="description"
+        content="CyVortex provides affordable and reliable cybersecurity services for students, startups, and small businesses. Web pentesting, network security, mobile app testing, cloud audits, and OSINT analysis." />
 
     <!-- SEO KEYWORDS -->
-    <meta name="keywords" content="CyVortex, cybersecurity services India, website pentesting, network security, mobile app security, cloud security audit, OSINT analysis" />
+    <meta name="keywords"
+        content="CyVortex, cybersecurity services India, website pentesting, network security, mobile app security, cloud security audit, OSINT analysis" />
 
     <!-- SOCIAL PREVIEW (WhatsApp, LinkedIn) -->
     <meta property="og:title" content="CyVortex | Secure the Digital Future" />
-    <meta property="og:description" content="Affordable cybersecurity services for students, startups, and small businesses." />
+    <meta property="og:description"
+        content="Affordable cybersecurity services for students, startups, and small businesses." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://cyvortex.co.in/" />
     <meta property="og:image" content="https://cyvortex.co.in/assets/logo.jpg" />
@@ -28,7 +32,9 @@
     <link rel="stylesheet" href="style.css" />
 
     <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -49,7 +55,7 @@
     <!-- HEADER -->
     <header>
         <div class="logo">
-           <img src="assets/logo.jpg" alt="CyVortex cybersecurity logo">
+            <img src="assets/logo.jpg" alt="CyVortex cybersecurity logo">
         </div>
 
         <nav>
@@ -60,13 +66,37 @@
             <a href="blog.html">Blog</a>
 
             <!-- CONTACT BUTTON -->
-            <a href="https://forms.gle/aFDjxiU8aNGTjfrr6" 
-               class="btn-nav" 
-               target="_blank" rel="noopener">
-               Contact
+            <a href="https://forms.gle/aFDjxiU8aNGTjfrr6" class="btn-nav" target="_blank" rel="noopener">
+                Contact
             </a>
         </nav>
+
+        <!-- HAMBURGER MENU (Mobile) -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
+
+    <!-- MOBILE SIDEBAR -->
+    <div class="sidebar-overlay"></div>
+    <div class="mobile-sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <img src="assets/logo.jpg" alt="CyVortex logo">
+            </div>
+            <button class="close-btn">&times;</button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="faq.html">FAQ</a>
+            <a href="blog.html">Blog</a>
+            <a href="https://forms.gle/aFDjxiU8aNGTjfrr6" class="btn-nav" target="_blank" rel="noopener">Contact</a>
+        </nav>
+    </div>
 
     <!-- HERO SECTION -->
     <section class="hero">
@@ -75,7 +105,7 @@
         <h1 class="glitch" data-text="CYVORTEX">CYVORTEX</h1>
         <p>Secure the Digital Future with CyVortex</p>
     </section>
-    
+
     <!-- SERVICE CARDS -->
     <section class="features" style="flex-wrap: wrap; gap: 25px; margin-bottom: 40px;">
 
@@ -117,14 +147,16 @@
 
         <div class="testimonial-box">
             <p class="testimonial-text">
-                "Their pentesting report was detailed and accurate. They found vulnerabilities our internal team missed."
+                "Their pentesting report was detailed and accurate. They found vulnerabilities our internal team
+                missed."
             </p>
             <p class="testimonial-author">— Priya Sharma, Tech Lead</p>
         </div>
 
         <div class="testimonial-box">
             <p class="testimonial-text">
-                "Highly recommended for OSINT & digital footprint analysis. Their findings helped us remove online risks."
+                "Highly recommended for OSINT & digital footprint analysis. Their findings helped us remove online
+                risks."
             </p>
             <p class="testimonial-author">— Anil Verma, Small Business Owner</p>
         </div>
@@ -153,30 +185,31 @@
 
     <!-- Chatbase -->
     <script>
-    (function(){
-        if(!window.chatbase||window.chatbase("getState")!=="initialized"){
-            window.chatbase=(...arguments)=>{
-                if(!window.chatbase.q){window.chatbase.q=[]}
-                window.chatbase.q.push(arguments)
+        (function () {
+            if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+                window.chatbase = (...arguments) => {
+                    if (!window.chatbase.q) { window.chatbase.q = [] }
+                    window.chatbase.q.push(arguments)
+                };
+                window.chatbase = new Proxy(window.chatbase, {
+                    get(target, prop) {
+                        if (prop === "q") { return target.q }
+                        return (...args) => target(prop, ...args)
+                    }
+                })
+            }
+            const onLoad = function () {
+                const script = document.createElement("script");
+                script.src = "https://www.chatbase.co/embed.min.js";
+                script.id = "VT8l0-0ctGBuVa07mS0x4";
+                script.domain = "www.chatbase.co";
+                document.body.appendChild(script)
             };
-            window.chatbase=new Proxy(window.chatbase,{
-                get(target,prop){
-                    if(prop==="q"){return target.q}
-                    return(...args)=>target(prop,...args)
-                }
-            })
-        }
-        const onLoad=function(){
-            const script=document.createElement("script");
-            script.src="https://www.chatbase.co/embed.min.js";
-            script.id="VT8l0-0ctGBuVa07mS0x4";
-            script.domain="www.chatbase.co";
-            document.body.appendChild(script)
-        };
-        if(document.readyState==="complete"){onLoad()}
-        else{window.addEventListener("load",onLoad)}
-    })();
+            if (document.readyState === "complete") { onLoad() }
+            else { window.addEventListener("load", onLoad) }
+        })();
     </script>
 
 </body>
+
 </html>

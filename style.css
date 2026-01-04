@@ -26,10 +26,12 @@ header {
 }
 
 .logo img {
-    height: 55px;              /* adjust size */
+    height: 55px;
+    /* adjust size */
     width: auto;
     object-fit: contain;
-    filter: drop-shadow(0 0 6px #66fcf1); /* neon glow */
+    filter: drop-shadow(0 0 6px #66fcf1);
+    /* neon glow */
     transition: 0.3s ease;
 }
 
@@ -37,6 +39,7 @@ header {
     transform: scale(1.08);
     filter: drop-shadow(0 0 12px #66fcf1);
 }
+
 /* NAVBAR */
 nav a {
     color: #c5c6c7;
@@ -93,13 +96,13 @@ nav a.active {
 
 .card {
     width: 30%;
-    background: rgba(31,40,51,0.75);
+    background: rgba(31, 40, 51, 0.75);
     backdrop-filter: blur(10px);
     border: 1px solid #45a29e;
     border-radius: 12px;
     padding: 25px;
     text-align: center;
-    box-shadow: 0 0 12px rgba(102,252,241,0.18);
+    box-shadow: 0 0 12px rgba(102, 252, 241, 0.18);
     transition: 0.3s;
     cursor: pointer;
     text-decoration: none;
@@ -107,7 +110,7 @@ nav a.active {
 
 .card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 0 18px rgba(102,252,241,0.4);
+    box-shadow: 0 0 18px rgba(102, 252, 241, 0.4);
 }
 
 .card h3 {
@@ -179,6 +182,7 @@ footer {
         width: 100% !important;
     }
 }
+
 .hero .cta-btn {
     display: inline-block;
     background: #45a29e;
@@ -199,12 +203,14 @@ footer {
     transform: translateY(-4px);
     box-shadow: 0 0 20px #66fcf1;
 }
+
 /* FIX: Make entire service card clickable */
 .card-link {
     display: block !important;
     text-decoration: none;
     color: inherit;
 }
+
 /* ============================
    FAQ SECTION (BOX STYLE)
    ============================ */
@@ -218,17 +224,17 @@ footer {
 }
 
 .faq-box {
-    background: rgba(31,40,51,0.92);
+    background: rgba(31, 40, 51, 0.92);
     border: 1px solid #45a29e;
     border-radius: 12px;
     margin-bottom: 15px;
     overflow: hidden;
-    box-shadow: 0 0 12px rgba(102,252,241,0.3);
+    box-shadow: 0 0 12px rgba(102, 252, 241, 0.3);
     transition: 0.3s;
 }
 
 .faq-box:hover {
-    box-shadow: 0 0 20px rgba(102,252,241,0.7);
+    box-shadow: 0 0 20px rgba(102, 252, 241, 0.7);
 }
 
 .faq-question {
@@ -246,7 +252,7 @@ footer {
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    background: rgba(11,12,16,0.9);
+    background: rgba(11, 12, 16, 0.9);
     padding: 0 20px;
     transition: max-height 0.4s ease;
 }
@@ -255,6 +261,7 @@ footer {
     padding: 10px 0 20px 0;
     color: #c5c6c7;
 }
+
 /* -------------------------------
    TESTIMONIALS BOX DESIGN
 -------------------------------- */
@@ -270,13 +277,13 @@ footer {
     padding: 25px;
     margin: 20px auto;
     max-width: 800px;
-    box-shadow: 0 0 20px rgba(102,252,241,0.2);
+    box-shadow: 0 0 20px rgba(102, 252, 241, 0.2);
     transition: 0.3s;
 }
 
 .testimonial-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 25px rgba(102,252,241,0.6);
+    box-shadow: 0 0 25px rgba(102, 252, 241, 0.6);
 }
 
 .testimonial-text {
@@ -291,6 +298,7 @@ footer {
     font-weight: 600;
     font-size: 16px;
 }
+
 /* -------------------------------------
    BLOG LIST BOXES
 -------------------------------------- */
@@ -310,19 +318,19 @@ footer {
 
 /* Blog Card */
 .blog-box {
-    background: rgba(31,40,51,0.85);
+    background: rgba(31, 40, 51, 0.85);
     border: 1px solid #45a29e;
     padding: 25px;
     border-radius: 12px;
     margin-bottom: 25px;
-    box-shadow: 0 0 22px rgba(102,252,241,0.2);
+    box-shadow: 0 0 22px rgba(102, 252, 241, 0.2);
     backdrop-filter: blur(7px);
     transition: 0.3s;
 }
 
 .blog-box:hover {
     transform: translateY(-6px);
-    box-shadow: 0 0 28px rgba(102,252,241,0.45);
+    box-shadow: 0 0 28px rgba(102, 252, 241, 0.45);
 }
 
 .blog-box h3 {
@@ -347,25 +355,33 @@ footer {
 .blog-read:hover {
     text-shadow: 0 0 10px #66fcf1;
 }
+
 /* ===== CHATBOT FIX (CyVortex) ===== */
 
 /* Reduce chatbot height and move it up */
 .cb-window {
-    max-height: 70vh !important;     /* Prevents it from becoming too tall */
-    bottom: 40px !important;         /* Lifts the chatbot up */
-    border-radius: 20px !important;  /* Smooth rounded corners */
+    max-height: 70vh !important;
+    /* Prevents it from becoming too tall */
+    bottom: 40px !important;
+    /* Lifts the chatbot up */
+    border-radius: 20px !important;
+    /* Smooth rounded corners */
 }
 
 /* Adjust chatbot icon position */
 .cb-bubble-container {
-    bottom: 35px !important;         /* Move chatbot icon up */
-    right: 25px !important;          /* Adjust if needed */
+    bottom: 35px !important;
+    /* Move chatbot icon up */
+    right: 25px !important;
+    /* Adjust if needed */
 }
 
 /* Prevent chatbot from overlapping scroll button */
 #scrollTopBtn {
-    right: 90px !important;  /* Already correct in your CSS */
+    right: 90px !important;
+    /* Already correct in your CSS */
 }
+
 /* ============================================
    CYVORTEX CHATBOT – PREMIUM CYBER STYLE
    ============================================ */
@@ -376,9 +392,9 @@ footer {
     bottom: 40px !important;
     right: 25px !important;
     border-radius: 18px !important;
-    background: rgba(11,12,16,0.95) !important;
+    background: rgba(11, 12, 16, 0.95) !important;
     backdrop-filter: blur(10px) !important;
-    box-shadow: 0 0 22px rgba(102,252,241,0.35) !important;
+    box-shadow: 0 0 22px rgba(102, 252, 241, 0.35) !important;
     color: #c5c6c7 !important;
 }
 
@@ -388,13 +404,14 @@ footer {
     color: #0b0c10 !important;
     font-weight: 700 !important;
     border-radius: 14px 14px 0 0 !important;
-    box-shadow: 0 0 18px rgba(102,252,241,0.8) !important;
+    box-shadow: 0 0 18px rgba(102, 252, 241, 0.8) !important;
 }
 
 /* Chat message area scrollbar styling */
 .cb-window ::-webkit-scrollbar {
     width: 8px !important;
 }
+
 .cb-window ::-webkit-scrollbar-thumb {
     background: #45a29e !important;
     border-radius: 10px !important;
@@ -406,23 +423,23 @@ footer {
     color: #0b0c10 !important;
     border-radius: 12px !important;
     padding: 10px 14px !important;
-    box-shadow: 0 0 12px rgba(102,252,241,0.6) !important;
+    box-shadow: 0 0 12px rgba(102, 252, 241, 0.6) !important;
 }
 
 /* AI message bubble */
 .cb-bot-msg {
-    background: rgba(31,40,51,0.85) !important;
+    background: rgba(31, 40, 51, 0.85) !important;
     color: #c5c6c7 !important;
     border: 1px solid #45a29e !important;
     border-radius: 12px !important;
     padding: 10px 14px !important;
-    box-shadow: 0 0 14px rgba(102,252,241,0.35) !important;
+    box-shadow: 0 0 14px rgba(102, 252, 241, 0.35) !important;
 }
 
 /* Chat input box */
-.cb-input, 
+.cb-input,
 .cb-textarea {
-    background: rgba(11,12,16,0.85) !important;
+    background: rgba(11, 12, 16, 0.85) !important;
     color: #ffffff !important;
     border: 1px solid #45a29e !important;
     border-radius: 12px !important;
@@ -433,7 +450,7 @@ footer {
     background: #66fcf1 !important;
     color: #0b0c10 !important;
     border-radius: 50% !important;
-    box-shadow: 0 0 12px rgba(102,252,241,0.7) !important;
+    box-shadow: 0 0 12px rgba(102, 252, 241, 0.7) !important;
 }
 
 /* Chat bubble icon (floating button) */
@@ -445,7 +462,7 @@ footer {
 .cb-bubble {
     background: #0BE4F4 !important;
     border-radius: 50% !important;
-    box-shadow: 0 0 20px rgba(0,255,200,0.6) !important;
+    box-shadow: 0 0 20px rgba(0, 255, 200, 0.6) !important;
 }
 
 /* Footer text inside chat */
@@ -456,3 +473,169 @@ footer {
 }
 
 
+
+/* ===== MOBILE HAMBURGER MENU ===== */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 100;
+    padding: 5px;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background: #66fcf1;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+    box-shadow: 0 0 8px rgba(102, 252, 241, 0.5);
+}
+
+.hamburger:hover span {
+    box-shadow: 0 0 12px rgba(102, 252, 241, 0.8);
+}
+
+/* Mobile Sidebar */
+.mobile-sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: rgba(11, 12, 16, 0.98);
+    backdrop-filter: blur(10px);
+    border-left: 2px solid #45a29e;
+    box-shadow: -5px 0 25px rgba(102, 252, 241, 0.3);
+    z-index: 999;
+    transition: right 0.4s ease;
+    overflow-y: auto;
+}
+
+.mobile-sidebar.active {
+    right: 0;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #45a29e;
+}
+
+.sidebar-logo img {
+    height: 45px;
+    width: auto;
+    filter: drop-shadow(0 0 6px #66fcf1);
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: #66fcf1;
+    font-size: 32px;
+    cursor: pointer;
+    line-height: 1;
+    transition: 0.3s;
+}
+
+.close-btn:hover {
+    color: #45a29e;
+    transform: rotate(90deg);
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.sidebar-nav a {
+    color: #c5c6c7;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a.active {
+    color: #66fcf1;
+    background: rgba(102, 252, 241, 0.1);
+    border-left-color: #66fcf1;
+    text-shadow: 0 0 8px #66fcf1;
+}
+
+.sidebar-nav .btn-nav {
+    margin: 15px 25px;
+    padding: 12px 20px;
+    border: 2px solid #66fcf1;
+    border-radius: 8px;
+    text-align: center;
+    background: rgba(102, 252, 241, 0.1);
+}
+
+.sidebar-nav .btn-nav:hover {
+    background: #66fcf1;
+    color: #0b0c10;
+}
+
+/* Sidebar Overlay */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.sidebar-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* RESPONSIVE HEADER & NAV */
+@media (max-width: 900px) {
+    header {
+        flex-direction: row;
+        padding: 15px 25px;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-bottom: 0;
+    }
+
+    /* Hide desktop nav on mobile */
+    header nav {
+        display: none !important;
+    }
+
+    /* Show hamburger menu on mobile */
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media (max-width: 600px) {
+    .glitch {
+        font-size: 40px;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+}

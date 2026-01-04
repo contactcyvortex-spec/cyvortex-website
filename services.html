@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,14 +9,17 @@
     <title>Cybersecurity Services | Web, Network & App Security – CyVortex</title>
 
     <!-- SEO DESCRIPTION -->
-    <meta name="description" content="CyVortex offers professional cybersecurity services including website and web app pentesting, network & WiFi security, mobile app testing, cloud security audits, OSINT analysis, and secure web development." />
+    <meta name="description"
+        content="CyVortex offers professional cybersecurity services including website and web app pentesting, network & WiFi security, mobile app testing, cloud security audits, OSINT analysis, and secure web development." />
 
     <!-- SEO KEYWORDS -->
-    <meta name="keywords" content="cybersecurity services India, web pentesting, network security, mobile app security testing, cloud security audit, OSINT analysis, CyVortex" />
+    <meta name="keywords"
+        content="cybersecurity services India, web pentesting, network security, mobile app security testing, cloud security audit, OSINT analysis, CyVortex" />
 
     <!-- SOCIAL PREVIEW -->
     <meta property="og:title" content="Cybersecurity Services | CyVortex" />
-    <meta property="og:description" content="Professional and affordable cybersecurity services for students, startups, and small businesses." />
+    <meta property="og:description"
+        content="Professional and affordable cybersecurity services for students, startups, and small businesses." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://cyvortex.co.in/services.html" />
     <meta property="og:image" content="https://cyvortex.co.in/assets/logo.jpg" />
@@ -24,94 +28,121 @@
     <link rel="stylesheet" href="style.css" />
 
     <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-<div id="cursor"></div>
+    <div id="cursor"></div>
 
-<!-- LOADER -->
-<div id="loader">
-    <div class="loader-box">
-        <p class="load-text">Loading Cyber Defense Modules...</p>
-        <div class="loading-bar"></div>
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="loader-box">
+            <p class="load-text">Loading Cyber Defense Modules...</p>
+            <div class="loading-bar"></div>
+        </div>
     </div>
-</div>
 
-<!-- BACKGROUND -->
-<canvas id="matrix"></canvas>
-<canvas id="particles"></canvas>
+    <!-- BACKGROUND -->
+    <canvas id="matrix"></canvas>
+    <canvas id="particles"></canvas>
 
-<!-- HEADER -->
-<header>
-   <div class="logo">
-        <img src="assets/logo.jpg" alt="CyVortex cybersecurity services logo">
-   </div>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <img src="assets/logo.jpg" alt="CyVortex cybersecurity services logo">
+        </div>
 
-   <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a class="active" href="services.html">Services</a>
-        <a href="faq.html">FAQ</a>
-        <a href="blog.html">Blog</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a class="active" href="services.html">Services</a>
+            <a href="faq.html">FAQ</a>
+            <a href="blog.html">Blog</a>
 
-        <!-- CONTACT BUTTON -->
-        <a href="https://forms.gle/aFDjxiU8aNGTjfrr6" 
-           class="btn-nav" 
-           target="_blank" rel="noopener">
-           Contact
+            <!-- CONTACT BUTTON -->
+            <a href="https://forms.gle/aFDjxiU8aNGTjfrr6" class="btn-nav" target="_blank" rel="noopener">
+                Contact
+            </a>
+        </nav>
+
+        <!-- HAMBURGER MENU (Mobile) -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- MOBILE SIDEBAR -->
+    <div class="sidebar-overlay"></div>
+    <div class="mobile-sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <img src="assets/logo.jpg" alt="CyVortex logo">
+            </div>
+            <button class="close-btn">&times;</button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="faq.html">FAQ</a>
+            <a href="blog.html">Blog</a>
+            <a href="https://forms.gle/aFDjxiU8aNGTjfrr6" class="btn-nav" target="_blank" rel="noopener">Contact</a>
+        </nav>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1 class="glitch" data-text="SERVICES">SERVICES</h1>
+        <p>Advanced Cybersecurity & Ethical Hacking Services</p>
+    </section>
+
+    <!-- SERVICE CARDS -->
+    <section class="features" style="flex-wrap: wrap; gap: 25px; margin-bottom: 40px;">
+
+        <a href="service-web-pentesting.html" class="card card-link">
+            <h3>Website & Web App Pentesting</h3>
+            <p>Manual + automated VAPT, OWASP Top 10 testing, authentication bypass & secure patching report.</p>
         </a>
-   </nav>
-</header>
 
-<!-- HERO -->
-<section class="hero">
-    <h1 class="glitch" data-text="SERVICES">SERVICES</h1>
-    <p>Advanced Cybersecurity & Ethical Hacking Services</p>
-</section>
+        <a href="service-network-security.html" class="card card-link">
+            <h3>Network & WiFi Security</h3>
+            <p>WiFi cracking checks, firewall testing, MITM simulation, router audit & secure hardening.</p>
+        </a>
 
-<!-- SERVICE CARDS -->
-<section class="features" style="flex-wrap: wrap; gap: 25px; margin-bottom: 40px;">
+        <a href="service-mobile-app-testing.html" class="card card-link">
+            <h3>Mobile App Security Testing</h3>
+            <p>APK analysis, API flaws, insecure storage, session hijacking & developer security guidelines.</p>
+        </a>
 
-    <a href="service-web-pentesting.html" class="card card-link">
-        <h3>Website & Web App Pentesting</h3>
-        <p>Manual + automated VAPT, OWASP Top 10 testing, authentication bypass & secure patching report.</p>
-    </a>
+        <a href="service-cloud-security.html" class="card card-link">
+            <h3>Cloud Security Audit</h3>
+            <p>Misconfigurations, IAM issues, bucket exposure, encryption gaps & cloud hardening steps.</p>
+        </a>
 
-    <a href="service-network-security.html" class="card card-link">
-        <h3>Network & WiFi Security</h3>
-        <p>WiFi cracking checks, firewall testing, MITM simulation, router audit & secure hardening.</p>
-    </a>
+        <a href="service-osint-analysis.html" class="card card-link">
+            <h3>OSINT & Digital Footprint Scan</h3>
+            <p>Breached data, dark-web findings, impersonation detection & privacy hardening checklist.</p>
+        </a>
 
-    <a href="service-mobile-app-testing.html" class="card card-link">
-        <h3>Mobile App Security Testing</h3>
-        <p>APK analysis, API flaws, insecure storage, session hijacking & developer security guidelines.</p>
-    </a>
+        <a href="secure-webdev.html" class="card card-link">
+            <h3>Secure Website Development</h3>
+            <p>Fully coded secure websites, SEO-ready, optimized & protected with security best practices.</p>
+        </a>
 
-    <a href="service-cloud-security.html" class="card card-link">
-        <h3>Cloud Security Audit</h3>
-        <p>Misconfigurations, IAM issues, bucket exposure, encryption gaps & cloud hardening steps.</p>
-    </a>
+    </section>
 
-    <a href="service-osint-analysis.html" class="card card-link">
-        <h3>OSINT & Digital Footprint Scan</h3>
-        <p>Breached data, dark-web findings, impersonation detection & privacy hardening checklist.</p>
-    </a>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 CyVortex • Secure the Future</p>
+    </footer>
 
-    <a href="secure-webdev.html" class="card card-link">
-        <h3>Secure Website Development</h3>
-        <p>Fully coded secure websites, SEO-ready, optimized & protected with security best practices.</p>
-    </a>
+    <button id="scrollTopBtn">↑</button>
 
-</section>
-
-<!-- FOOTER -->
-<footer>
-    <p>© 2025 CyVortex • Secure the Future</p>
-</footer>
-
-<button id="scrollTopBtn">↑</button>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
